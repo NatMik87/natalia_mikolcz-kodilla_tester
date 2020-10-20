@@ -10,3 +10,4 @@
 *.ipr
 *.class
 /out/
+.DS_Store
