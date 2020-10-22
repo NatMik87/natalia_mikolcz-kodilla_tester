@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class Grades {
-    private int[] grades;
+    private int[] grades; //dlaczego private?
     private int size;
 
     public Grades() {
