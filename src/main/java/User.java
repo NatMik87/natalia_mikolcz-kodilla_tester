@@ -37,7 +37,7 @@ public class User {
                 System.out.println(users[i].name);
             }
         }
-        System.out.println(Arrays.toString(users));
+        System.out.println(java.util.Arrays.toString(users));
     }
     }
 
