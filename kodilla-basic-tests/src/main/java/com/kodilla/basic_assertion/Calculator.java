@@ -9,4 +9,8 @@ public class Calculator {
     public int subtract(int a, int b){
         return a-b;
     }
+
+    public int square(int a) { return a * a;}
+    public int squareC(int c) { return c * c;}
+    public int squareD(int d) { return d * d;}
 }
