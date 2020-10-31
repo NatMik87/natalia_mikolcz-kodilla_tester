@@ -12,9 +12,9 @@ public class Book {
     }
 
     public static void main(String[] args) {
-        Book romans = new Book("R.Smith", "Love");
-        Book criminal = new Book("K.Bobson", "Scare");
-        Book sifi = new Book("R.NNowak", "Alien");
+        Book romans = Book.of("R.Smith", "Love");
+        Book criminal = Book.of("K.Bobson", "Scare");
+        Book sifi = Book.of("R.NNowak", "Alien");
 
         System.out.println(romans.author +" " + romans.title);
     }

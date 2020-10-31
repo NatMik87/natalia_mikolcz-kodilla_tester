@@ -4,7 +4,7 @@ public class Colors {
     public static String getColor() {
         String letter = Colors.getValue();
         String result;
-        switch (getValue()) {
+        switch (letter) {
             case "W":
                 result = "White";
                 break;
