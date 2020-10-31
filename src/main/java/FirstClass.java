@@ -18,6 +18,10 @@ public class FirstClass {
         oldNotebook.checkWeight();
         oldNotebook.checkYear();
 
+        Notebook saleDeal = new Notebook(1700, 900, 2020);
+        System.out.println(saleDeal.year + " " + saleDeal.price);
+        saleDeal.checkDeal();
+
     }
 }
 
