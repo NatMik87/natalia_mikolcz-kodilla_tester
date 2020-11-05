@@ -12,7 +12,9 @@ import java.util.Random;
 public class CarsApplication {
 
     public static void main(String[] args) {
-        Car[] cars = new Car[15];
+        Random random = new Random();
+        int drawCarNumber = random.nextInt(15)+1;
+        Car[] cars = new Car[drawCarNumber];
         for (int n = 0; n < cars.length; n++)
             cars[n] = drawCar();
         for ( Car car : cars)
@@ -22,7 +24,7 @@ public class CarsApplication {
     private static Car drawCar() {
         Random random = new Random();
         int drawnCarKind = random.nextInt(3);
-        int speed = random.nextInt() + 10 + 1;
+        int speed = random.nextInt(50);
 
         if (drawnCarKind == 0)
             return new Ford (speed , 5 , 5);
