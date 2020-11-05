@@ -13,16 +13,17 @@ public class Skoda implements Car{
 
     @Override
     public int getSpeed() {
-        return 3 *increaseSpeed() -  2 *decreaseSpeed();
+        return speed;
     }
 
     @Override
-    public int increaseSpeed() {
-        return speed + increaseSpeed;
+    public void increaseSpeed() {
+        this.speed = this.speed + this.increaseSpeed;
     }
 
     @Override
-    public int decreaseSpeed() {
-        return speed - decreaseSpeed;
+    public void decreaseSpeed() {
+        this.speed = this.speed - this.decreaseSpeed;
+
     }
 }

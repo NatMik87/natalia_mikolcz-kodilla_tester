@@ -11,8 +11,10 @@ public class CarUtils {
         System.out.println(" __________________");
         System.out.println("Name of car is: " + getCarName(car));
         System.out.println("Car speed is: " + car.getSpeed());
-        System.out.println("Increase speed car: " + car.increaseSpeed());
-        System.out.println("Decrease speed car: " + car.decreaseSpeed());
+        car.increaseSpeed();
+        System.out.println("Increase speed car: " + car.getSpeed());
+        car.decreaseSpeed();
+        System.out.println("Decrease speed car: " + car.getSpeed());
     }
 
     private static String getCarName(Car car) {

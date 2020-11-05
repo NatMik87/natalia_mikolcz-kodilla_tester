@@ -25,10 +25,10 @@ public class CarsApplication {
         int speed = random.nextInt() + 10 + 1;
 
         if (drawnCarKind == 0)
-            return new Ford(speed);  // nie rozumiem dlaczego mi tu podkreśla
+            return new Ford (speed , 5 , 5);
         else if (drawnCarKind == 1)
-            return new Seat(speed);
+            return new Seat(speed, 20, 10);
         else
-            return new Skoda(speed);
+            return new Skoda(speed, 15, 30);
     }
 }

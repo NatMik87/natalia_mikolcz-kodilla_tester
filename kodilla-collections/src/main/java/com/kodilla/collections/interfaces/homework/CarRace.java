@@ -16,8 +16,11 @@ public class CarRace {
 
 
     private static void doRace(Car car) {
-        System.out.println(3 * car.increaseSpeed());
-        System.out.println(2 * car.decreaseSpeed());
-        System.out.println(car.getSpeed()); // nie wiem jak tu wyciągnąć wynik z powyższej akcji
+        car.increaseSpeed();
+        car.increaseSpeed();
+        car.increaseSpeed();
+        car.decreaseSpeed();
+        car.decreaseSpeed();
+        System.out.println(car.getSpeed());
     }
 }
