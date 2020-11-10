@@ -26,4 +26,13 @@ public class Skoda implements Car{
         this.speed = this.speed - this.decreaseSpeed;
 
     }
+
+    @Override
+    public String toString() {
+        return "Skoda{" +
+                "speed=" + speed +
+                ", increaseSpeed=" + increaseSpeed +
+                ", decreaseSpeed=" + decreaseSpeed +
+                '}';
+    }
 }
