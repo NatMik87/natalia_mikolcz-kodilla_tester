@@ -2,13 +2,19 @@ package com.kodilla.bank.homework;
 
 public class Bank {
     private String bank;
+    private int saldo;
     public CashMachine deposite;
     public CashMachine paycheck;
 
     public Bank (String cachMachinName) {
         this.bank = cachMachinName;
+        this.saldo = saldo;
         this.deposite = new CashMachine();
         this.paycheck = new CashMachine();
+    }
+
+    public int getSaldo() {
+        return 10000;
     }
 
     public void addDepositeValue(int value) {
