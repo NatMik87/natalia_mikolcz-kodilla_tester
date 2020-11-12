@@ -7,7 +7,7 @@ import com.kodilla.collections.interfaces.homework.Seat;
 import com.kodilla.collections.interfaces.homework.Skoda;
 
 public class CarUtils {
-    public static String describeCar(Car car) {
+    public static void describeCar(Car car) {
         System.out.println(" __________________");
         System.out.println("Name of car is: " + getCarName(car));
         System.out.println("Car speed is: " + car.getSpeed());
@@ -15,7 +15,6 @@ public class CarUtils {
         System.out.println("Increase speed car: " + car.getSpeed());
         car.decreaseSpeed();
         System.out.println("Decrease speed car: " + car.getSpeed());
-        return null;
     }
 
     private static String getCarName(Car car) {

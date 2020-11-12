@@ -23,7 +23,7 @@ public class CarsListApplication {
         System.out.println(cars.size());
 
         for (Car car :cars) {
-            System.out.println(CarUtils.describeCar(car));
+            CarUtils.describeCar(car);
         }
     }
 }
