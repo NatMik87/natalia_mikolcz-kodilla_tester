@@ -43,4 +43,19 @@ public class CashMachine {
         }
         return sum/this.transaction.length;
     }
+
+    public double getSubAverage() {
+        if (this.transaction.length == 0) {
+            return 0;
+        }
+        double sum = 0;
+        double subcounter = 0;
+        for (int i = 0; i < this.transaction.length; i++) {
+            if (this.transaction[i] < 0) {
+                subcounter++;
+            sum += this.transaction[i];}
+        }
+        return sum/this.transaction.length;
+    }
+    }
 }

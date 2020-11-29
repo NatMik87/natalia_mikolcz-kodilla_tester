@@ -1,32 +1,17 @@
 package com.kodilla.bank.homework;
 
 public class Bank {
-    private String bank;
+    private CashMachine cashMachine[]= new CashMachine[20];
     private int saldo;
-    public CashMachine deposite;
-    public CashMachine paycheck;
+
 
     public Bank (String cachMachinName) {
-        this.bank = cachMachinName;
         this.saldo = saldo;
-        this.deposite = new CashMachine();
-        this.paycheck = new CashMachine();
+
     }
 
     public int getSaldo() {
         return 10000;
-    }
-
-    public void addDepositeValue(int value) {
-        if (value > 0 && value < 1000) {
-            this.deposite.add(value);
-        }
-    }
-
-    public void subPaycheckValue(int value) {
-        if (value > 0 && value < 1000) {
-            this.paycheck.sub(value);
-        }
     }
 
     public double getDepositeAverage() {
@@ -34,7 +19,14 @@ public class Bank {
     }
 
     public double getPaycheckAvarage() {
-        return this.paycheck.getAverage();
+        if (this.cashMachine.length == 0) {
+            return 0; }
+        double sum =0;
+
+        for (int i=0 ; i < this.cashMachine.length ; i++){
+            sum += this.cashMachine[i].getSubAverage(); }
+        return sum / this.cashMachine.length;
+
     }
 
     public double getBalance() {
