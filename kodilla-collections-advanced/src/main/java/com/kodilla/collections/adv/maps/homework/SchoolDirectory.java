@@ -27,6 +27,3 @@ public class SchoolDirectory {
     }
 }
 
-//for (Map.Entry<Student, Grades> studentEntry : school.entrySet()) {
-//            System.out.println(studentEntry.getKey().getFirstname()+ " , average: "
-//                    + studentEntry.getValue().getAverage());
