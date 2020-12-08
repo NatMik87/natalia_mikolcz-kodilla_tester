@@ -1,4 +1,4 @@
-package Test;
+package com.kodilla.collections.adv.exercises;
 
 import com.kodilla.collections.adv.exercises.dictionary.Dictionary;
 import com.kodilla.collections.adv.exercises.dictionary.EnglishWord;
