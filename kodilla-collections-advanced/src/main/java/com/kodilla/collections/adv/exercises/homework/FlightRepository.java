@@ -1,4 +1,6 @@
-package com.kodilla.collections.adv.exercises.homework.DictionaryTestSuite;
+package com.kodilla.collections.adv.exercises.homework;
+
+import com.kodilla.collections.adv.exercises.homework.Flight;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.kodilla.collections.adv.exercises.homework.DictionaryTestSuite;
+package com.kodilla.collections.adv.exercises.homework;
 
 import java.util.Objects;
 
