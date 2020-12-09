@@ -39,7 +39,7 @@ public class DictionaryTestSuite {
         //then
         List<EnglishWord> expectedList = new ArrayList<>();
         expectedList.add(new EnglishWord(PartOfSpeech.NOUN,"play"));
-        expectedList.add(new EnglishWord(PartOfSpeech.VERB,"game"));
+        expectedList.add(new EnglishWord(PartOfSpeech.NOUN,"game"));
         assertEquals(expectedList, result);
     }
 
