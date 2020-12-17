@@ -6,10 +6,18 @@ public class ForumStats {
     public static void main(String[] args) {
         double post = UserRepository.getUsersList()
                 .stream()
-                .map(u -> u.getNumberOfPost())
-                .mapToInt(p -> p)
+                .filter(u -> u.getAge()>=40)
+                .mapToInt(p -> p.getNumberOfPost())
                 .average()
                 .getAsDouble();
         System.out.println(post);
+
+        double post2 = UserRepository.getUsersList()
+                .stream()
+                .filter(u -> u.getAge() <40)
+                .mapToInt(p -> p.getNumberOfPost())
+                .average()
+                .getAsDouble();
+        System.out.println(post2);
     }
 }
