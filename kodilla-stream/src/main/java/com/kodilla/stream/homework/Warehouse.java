@@ -2,7 +2,6 @@ package com.kodilla.stream.homework;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 public class Warehouse {
     private List<Order> orders = new ArrayList<>();
