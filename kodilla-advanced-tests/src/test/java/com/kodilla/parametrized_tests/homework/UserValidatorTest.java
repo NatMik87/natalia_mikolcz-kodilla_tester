@@ -33,4 +33,14 @@ class UserValidatorTest {
         assertTrue(validator.validateEmail(email));
     }
 
+    @ParameterizedTest
+    @CsvSource(value = {"natalia@@gmai.com" , "Annna.op.pl", "007@bg", "@suite.us"})
+    public void shouldReturnFalseIfEmailNotValidate(String email) {
+        assertFalse(validator.validateEmail(email));
+    }
+
+    @ParameterizedTest
+    @NullAndEmptySource
+    public void shouldReturnFalseIfEmailIsEmpty(String email) {assertFalse(validator.validateEmail(email));}
+
 }
