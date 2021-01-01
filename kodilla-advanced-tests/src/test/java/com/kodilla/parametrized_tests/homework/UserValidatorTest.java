@@ -11,25 +11,25 @@ class UserValidatorTest {
 
     @ParameterizedTest
     @CsvSource(value = {"anna", "Hero001", "007_JB", "Smith-Wells"})
-    public void shouldReturnTrueIfNameValidate(String username , String expected) {
+    public void shouldReturnTrueIfNameValidate(String username) {
         assertTrue(validator.validateUsername(username));
     }
 
     @ParameterizedTest
     @NullAndEmptySource
     public void shouldReturnFalseIfNameIsEmpty(String username) {
-        assertTrue(validator.validateUsername(username));
+        assertFalse(validator.validateUsername(username));
     }
 
     @ParameterizedTest
     @CsvSource(value = {"@@@@" , "+.+", "  %%%  "})
-    public void shouldReturnFalseIfNameNotValidate(String username, String expected) {
+    public void shouldReturnFalseIfNameNotValidate(String username) {
         assertFalse(validator.validateUsername(username));
     }
 
     @ParameterizedTest
     @CsvSource(value = {"anna@op.pl", "hero_001@us.us", "james@007.gb", "smith-wells@suite.io"})
-    public void shouldReturnTrueIfEmailValidate(String email, String expected) {
+    public void shouldReturnTrueIfEmailValidate(String email) {
         assertTrue(validator.validateEmail(email));
     }
 
