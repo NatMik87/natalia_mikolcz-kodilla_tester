@@ -1,5 +1,6 @@
-package com.kodilla.parametrized_tests;
+package com.kodilla.parametrized_tests.homework;
 
+import org.junit.jupiter.params.provider.Arguments;
 
 import java.util.stream.Stream;
 
@@ -11,7 +12,6 @@ public class StringSources {
                 Arguments.of("E V e n t", 5),
                 Arguments.of("null ", 4),
                 Arguments.of("A", 1)
-                Arguments
         );
     }
 }
