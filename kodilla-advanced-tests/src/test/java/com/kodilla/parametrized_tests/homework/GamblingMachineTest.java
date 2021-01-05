@@ -57,10 +57,10 @@ class GamblingMachineTest {
         numbers.add(one);
         numbers.add(two);
         numbers.add(three);
-        numbers.add(four);
+        numbers.add(four);§
         numbers.add(five);
         numbers.add(six);
-        int result = validator.howManyWins(numbers);
+        int result = validator.howManyWins(()-> validator.howManyWins(numbers));
         Assertions.assertEquals(numbers, result);
 
 
