@@ -8,7 +8,7 @@ public class WeightSources {
 
     static Stream<Arguments> provideWeightForTestingBmi(){
         return Stream.of(
-                Arguments.of(60, 170),
+                Arguments.of(170, 60, ""),
                 Arguments.of(100, 180),
                 Arguments.of(80, 175),
                 Arguments.of(50, 168),
