@@ -1,7 +1,5 @@
 package com.kodilla.execution_model.homework;
 
-import java.time.DateTimeException;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,10 +11,10 @@ public class Shop {
         this.orders.add(order);
     }
 
-    public Order getOrder(LocalDate localDate){
-        return (LocalDate.of(2018,01,01).plusYears(2L) )
-            return this.orders.get(orders);
-    }
+   // public Order getOrder(LocalDate localDate){
+    //    return (LocalDate.of(2018,01,01).plusYears(2L) )
+          //  return this.orders.get(orders);
+    //}
 
 
 
@@ -24,7 +22,7 @@ public class Shop {
         return this.orders.size();
     }
 
-    public int sumAllOrders() {
-        return this.orders
+   // public int sumAllOrders() {
+    //    return this.orders
     }
-}
+
