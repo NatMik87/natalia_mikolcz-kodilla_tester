@@ -60,7 +60,10 @@ class GamblingMachineTest {
         numbers.add(four);
         numbers.add(five);
         numbers.add(six);
+
+        //GamblingMachine result = validator.howManyWins(int <= 6);
         Assertions.assertEquals(6, numbers.size());
+        Assertions.assertEquals(numbers.size() < 6,validator.howManyWins(numbers));
 
 
     }
