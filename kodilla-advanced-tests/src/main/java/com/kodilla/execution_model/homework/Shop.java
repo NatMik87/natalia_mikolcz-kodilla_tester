@@ -1,6 +1,5 @@
 package com.kodilla.execution_model.homework;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,12 +21,12 @@ public class Shop {
         return this.orders.size();
     }
 
-    public double sumAllOrders(Order order) {
-        double result = 0;
-        for (double i : order.getPrice()) {
-            result += i;
-        }
-        return result;
-    }
+    //public double sumAllOrders(Order order) {
+    //    double result = 0;
+     //   for (double i : order.getPrice()) {
+     //       result += i;
+      //  }
+      //  return result;
+    //}
 }
 

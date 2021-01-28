@@ -9,6 +9,7 @@ public class Learning {
     }
 
     public double getHeightM() {
+
         return heightCm / 100.0;
     }
 
